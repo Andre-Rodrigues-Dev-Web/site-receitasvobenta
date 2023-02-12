@@ -64,6 +64,57 @@ li{
         font-size: 23px;
     }
 }
+/*Carousel*/
+.carousel {
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+  
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+  
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+@media(min-width: 768px){
+    .carousel{
+        width: 427px;
+        height: 251px;
+    }
+}  
 /*Cards*/
 .recipe-card {
     background-color: #fff;
@@ -74,7 +125,6 @@ li{
     align-items: center;
     justify-content: space-between;
     margin: 20px;
-    width: 300px;
     overflow: hidden;
     transition: all 0.2s ease-in-out;
 }
@@ -114,8 +164,8 @@ li{
 }
 
 .recipe-card-link {
-    background-color: #333;
-    color: #fff;
+    background-color: #f39f23;
+    color: #333;
     padding: 10px 20px;
     border-radius: 20px;
     text-align: center;
@@ -125,7 +175,7 @@ li{
 }
 
 .recipe-card-link:hover {
-    background-color: #fff;
+    background-color: #ff9800;
     color: #333;
 }
 .recipe-card-footer{
@@ -197,9 +247,46 @@ li{
     flex-direction: column;
     gap: 20px;
 }
+.content-aside{
+    padding: 50px 0;
+}
+.content-article{
+    padding: 20px 0;
+}
+.content-article h1{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 20px;
+}
+.content-article p{
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.content-article h2{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #333;
+}
+.content-article ul li,
+.content-article ol li{
+    list-style: none;
+    padding: 10px;
+}
 @media(min-width: 768px){
     .content_post{
         flex-direction: row;
+    }
+    .content-article{
+        padding: 10rem 1rem;
+        width: 70%;
+    }
+    .content-aside{
+        padding: 9rem 0;
+        width: 20%;
     }
 }
 /*Rodapé*/
@@ -227,6 +314,19 @@ li{
     text-transform: uppercase;
     padding: 7px 15px;
     transition: all 0.2s ease-in-out;
+}
+.copy{
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 0;
+    text-align: center;
+}
+.copy a{
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
 }
 @media(min-width: 768px){
     .rodape .container_topo{
