@@ -29,7 +29,7 @@ li{
 [class*="col-"]{
     padding: 10px;
 }
-@medi(min-width: 768px){
+@media(min-width: 768px){
     .container{width: 90%;}
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
@@ -43,6 +43,26 @@ li{
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+}
+/*Hero*/
+.hero{
+    font-size: 14px;
+    position: relative;
+    text-transform: uppercase;
+}
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 34px;
+    left: 0;
+    width: 90px;
+    height: 3px;
+    background-color: #ff9800;
+}
+@media(min-width: 768px){
+    .hero{
+        font-size: 23px;
+    }
 }
 /*Cards*/
 .recipe-card {
@@ -171,6 +191,16 @@ li{
 /*Section*/
 .content{
     padding: 10rem 0;
+}
+.content_post{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+@media(min-width: 768px){
+    .content_post{
+        flex-direction: row;
+    }
 }
 /*Rodapé*/
 .rodape{
