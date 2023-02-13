@@ -41,102 +41,52 @@
     </head>
     <body>
         <section class="theme">
-            <nav class="menu" role="navigation">
-                <div class="container_menu">
-                    <ul class="links">
-                        <li class="link">
-                            <a href="index.html" class="link__item" tabindex="0" aria-label="Ir para a página inicial" role="menuitem">Home</a>
-                        </li>
-                        <li class="link">
-                            <a href="salgados.html" class="link__item" tabindex="0" aria-label="Ver receitas de salgados" role="menuitem">Salgados</a>
-                        </li>
-                        <li class="link">
-                            <a href="doces.html" class="link__item" tabindex="0" aria-label="Ver receitas doces" role="menuitem">Doces</a>
-                        </li>
-                    </ul>
-                    <div class="logo">
-                        <a href="index.html" class="logo__link">
-                            <img src="assets/img/logo.png" alt="Logo da empresa" class="logo__img" tabindex="0" aria-hidden="true" role="presentation">
-                        </a>
-                    </div>
-                    <ul class="links">
-                        <li class="link">
-                            <a href="carnes.html" class="link__item" tabindex="0" aria-label="Ver receitas de carnes" role="menuitem">Carnes</a>
-                        </li>
-                        <li class="link">
-                            <a href="bebidas.html" class="link__item" tabindex="0" aria-label="Ver receitas de bebidas" role="menuitem">Bebidas</a>
-                        </li>
-                        <li class="link">
-                            <a href="sobrenos.html" class="link__item" tabindex="0" aria-label="Sobre nós" role="menuitem">Sobre Nós</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            <nav class="menu" include-html="includes/menu.html" role="navigation"></nav>
             <!--/menu-->            
             <main class="content">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <h2 class="hero">Destaques da semana</h2>
+                            <h2 class="hero">Refresque-se com Nossas Receitas de Bebidas Favoritas</h2>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-3">
                             <div class="recipe-card">
                                 <div class="recipe-card-header">
-                                    <img src="http://joselito.com.br/wp-content/uploads/pizza-wallpaper-olives-mushrooms-cheese-tomatoes-parsley-dish-food.jpg" alt="Recipe Image">
+                                    <img src="imagens-receitas/bolo-caseiro-fuba.png" alt="Receita de bolo de fubá">
                                 </div>
                                 <div class="recipe-card-body">
-                                    <h3 class="recipe-card-title">Recipe Name</h3>
-                                    <p class="recipe-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec condimentum magna.</p>
-                                    <a href="#" class="recipe-card-link">Show Recipe</a>
-                                </div>
-                                <div class="recipe-card-footer">
-                                    <div class="recipe-card-info">
-                                        <span class="recipe-card-info-item">
-                                            <i class="fa fa-clock-o"></i>
-                                            <span class="recipe-card-info-text">Tempo de preparo: 30 mins</span>
-                                        </span>
-                                        <span class="recipe-card-info-item">
-                                            <i class="fa fa-cutlery"></i>
-                                            <span class="recipe-card-info-text">Serve 4 pessoas</span>
-                                        </span>
-                                    </div>
+                                    <h3 class="recipe-card-title">Bolo de fubá caseira</h3>
+                                    <p class="recipe-card-description">
+                                        Bolo de fubá caseiro é uma receita simples e fácil de fazer. 
+                                        O bolo de fubá é uma receita tradicional e muito saborosa. 
+                                        Confira a receita e faça hoje mesmo!
+                                    </p>
+                                    <a href="page/bolo-de-fuba.html" class="recipe-card-link">Confira a receita</a>
                                 </div>
                             </div>                          
-                        </div>
+                        </div><!--/col-->
+                        <div class="col-3">
+                            <div class="recipe-card">
+                                <div class="recipe-card-header">
+                                    <img src="imagens-receitas/pizza-picanha.png" alt="Receita de pizza de picanha">
+                                </div>
+                                <div class="recipe-card-body">
+                                    <h3 class="recipe-card-title">Receita de pizza de picanha</h3>
+                                    <p class="recipe-card-description">
+                                        Experimente essa deliciosa pizza de picanha com ingredientes de alta qualidade e um sabor incrível. 
+                                        Um prato fácil e rápido para satisfazer seu paladar.
+                                    </p>
+                                    <a href="page/pizza-de-picanha.html" class="recipe-card-link">Confira a receita</a>
+                                </div>
+                            </div>                          
+                        </div><!--/col-->
                     </div>
                 </div>
             </main>
             <!--/content-->
-            <footer class="rodape">
-                <div class="container_topo">
-                  <nav>
-                    <ul>
-                      <li><a href="#">Sobre nós</a></li>
-                      <li><a href="#">Política de privacidade</a></li>
-                      <li><a href="#">Termos de uso</a></li>
-                      <li><a href="#">Contato</a></li>
-                    </ul>
-                  </nav>
-                  <nav>
-                    <ul>
-                      <li><a href="#">Carreiras</a></li>
-                      <li><a href="#">FAQ</a></li>
-                      <li><a href="#">Blog</a></li>
-                      <li><a href="#">Suporte</a></li>
-                    </ul>
-                  </nav>
-                  <nav>
-                    <ul>
-                      <li><a href="#">Siga-nos no Instagram</a></li>
-                      <li><a href="#">Curta-nos no Facebook</a></li>
-                      <li><a href="#">Siga-nos no Twitter</a></li>
-                      <li><a href="#">Assine nosso canal no YouTube</a></li>
-                    </ul>
-                  </nav>
-                </div>
-            </footer>
+            <footer class="rodape" include-html="includes/rodape.html"></footer>
             <!--/rodapé-->              
         </section>
         <!--Scripts-->
